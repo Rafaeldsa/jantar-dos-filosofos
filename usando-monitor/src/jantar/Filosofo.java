@@ -6,8 +6,8 @@ public class Filosofo extends Thread {
    int filosofo;
    String nome;
 
-   public Filosofo (String nomeF, Mesa mesadejantar, int fil) {
-      nome = nomeF;
+   public Filosofo (String nomeFilosofo, Mesa mesadejantar, int fil) {
+      nome = nomeFilosofo;
       mesa = mesadejantar;
       filosofo = fil;
    }
@@ -34,7 +34,7 @@ public class Filosofo extends Thread {
       }
       catch (InterruptedException e) {
     	  System.out.println("");
-    	  System.out.println("O Filófoso pensou demais");
+    	  System.out.println("O Filófoso pensou muito");
       }
    }
 
@@ -46,7 +46,7 @@ public class Filosofo extends Thread {
       }
       catch (InterruptedException e) {
     	  System.out.println("");
-         System.out.println("O Filósofo comeu em demasia");
+         System.out.println("O Filósofo comeu muito");
       }
    }
 
