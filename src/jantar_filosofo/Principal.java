@@ -22,28 +22,20 @@ public class Principal {
         }
 
         // Inicializa todos filósofos
-        filosofos[0] = new Filosofo("Sócrates", 0);
-        filosofos[1] = new Filosofo("Platão", 1);
-        filosofos[2] = new Filosofo("Aristótoles", 2);
-        filosofos[3] = new Filosofo("Tales", 3);
-        filosofos[4] = new Filosofo("Parmênides", 4);
+        filosofos[0] = new Filosofo("filosofo-1", 0);
+        filosofos[1] = new Filosofo("filosofo-2", 1);
+        filosofos[2] = new Filosofo("filosofo-3", 2);
+        filosofos[3] = new Filosofo("filosofo-4", 3);
+        filosofos[4] = new Filosofo("filosofo-5", 4);
         
        
         System.out.println("");        
-        /*semaforos[0] = new Semaphore(0);
-        semaforos[1] = new Semaphore(0);
-        semaforos[2] = new Semaphore(0);
-        semaforos[3] = new Semaphore(0);
-        semaforos[4] = new Semaphore(0);*/
+        
         for (int i = 0; i < semaforos.length; i++) {
             semaforos[i] = new Semaphore(0);
         }
 
-        /*filosofos[0].start();
-        filosofos[1].start();
-        filosofos[2].start();
-        filosofos[3].start();
-        filosofos[4].start();*/              
+                     
         for (int i = 0; i < filosofos.length; i++) {
             
         	filosofos[i].start();
