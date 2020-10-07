@@ -1,2 +1,1 @@
 # jantar-dos-filosofos
-#bielTeveAki
